@@ -66,10 +66,11 @@ a:hover
 
 .grid-item
 {
+    display: block;
     float: left;
     width: 100%;
+    padding-top: 25%;
     max-width: 250px;
-    display: block;
 }
 
 .grid-content
