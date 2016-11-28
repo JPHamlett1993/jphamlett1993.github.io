@@ -32,8 +32,16 @@ function getImagesFromAlbum(){
             var imageArray = partition(imageData, 4);
             for (var i =0;i < imageArray.length; i++){
                 for (var j =0; j < imageArray[i].length; j++) {
+                    console.log(imageArray[i][j]);
+                    link = "http://i.imgur.com/" + imageArray[i][j].id + "m";
+                    if (imageArray[i][j].type == "image/jpeg"){
+                        link += ".jpg"
+                    } else {
+                        link += ".png"
+                    }
+                    console.log(link);
                     $('<img />').attr({
-                        src:imageArray[i][j].link,
+                        src:link,
                     }).appendTo($('<a />').attr({
                         href:imageArray[i][j].link
                     }).appendTo($('#albumView')));
