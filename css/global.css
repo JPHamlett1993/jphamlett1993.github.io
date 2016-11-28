@@ -1,3 +1,9 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
 body
 {
     padding: 50px;
@@ -46,24 +52,24 @@ a:hover
     margin-bottom: 10px;
 }
 
-.content
-{
-    max-width: 650px;
-}
 
+#container {
+ 
+}
 .grid-wrapper
-{/*
-  float: left;*/
+{
+ 
+    margin:30px auto 0 auto;
     padding:0;
-    margin-top: 30px;
-    padding-left: 125px;
+   max-width:750px;
+   
 }
 
 .grid-item
 {
-    display: block;/*
-  float: left;*/
-    width: 100%;
+    display: block;
+   float:left;
+    width: 33%;
     padding-top: 25%;
     max-width: 250px;
 }
