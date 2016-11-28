@@ -67,6 +67,7 @@ define(
 			dialog = Dialog( 'share-dialog', parentEl, navButtonEl )
 				.add( isOnlineCssClass, uploadInfoEl )
 				.add( isOnlineCssClass, uploadButtonEl )
+				.add( isOnlineCssClass, uploadButtonEl )
 				.add( isOnlineCssClass, 'loader', statusEl )
 				.add( isOnlineCssClass, imgLinkLabel, imgLinkEl )
 				.add( isOnlineCssClass, twitterShareLinkEl )
