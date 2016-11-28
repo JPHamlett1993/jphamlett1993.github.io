@@ -90,3 +90,8 @@ a:hover
     width: 100%;
     height: 290px;
 }
+
+#albumView{
+    text-align: center;
+    background-color: #000000;
+}
