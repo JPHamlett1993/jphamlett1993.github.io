@@ -1,0 +1,60 @@
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/compountInterest.css""
+    <!-- Compiled and minified CSS -->
+    <link rel=" stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="../../js/compoundInterestCalc.js"></script>
+    <title>
+        JPHamlett Glitch Playground
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Compound interest Calculator</h2>
+
+
+        <form action="compoundInterestResults.html" method="GET">
+            <div class="row">
+                <label class="col-25" for="startingCapital">Starting Capital</label>
+                <input class="col-75" type="text" name="startingCapital" id="startingCapital"></input>
+            </div>
+            <div class="row">
+                <label class="col-25" for="additionalCapital">Additional Capital</label>
+                <input class="col-75" type="text" name="additionalCapital" id="additionalCapital"
+                    onchange="showOrHideFreq(this.value, 'additionFreqButtons')"></input>
+            </div>
+            <div id="additionFreqButtons" class="row">
+                <label class="col-25" for="additionalCapitalFreq">Additional Capital Frequency</label>
+                <select class="col-75" name="additionalCapitalFreq" id="additionalCapitalFreq">
+                    <option value="daily">Daily</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="col-25" for="rateOfReturn">Rate Of Return</label>
+                <input class="col-75" type="text" name="rateOfReturn" id="rateOfReturn"></input>
+            </div>
+            <div id="freqButtons" class="row">
+                <label class="col-25" for="freqButtonGroup">Compound Frequency</label>
+                <select class="col-75" name="freqButtonGroup" id="freqButtonGroup">
+                    <option value="daily">Daily</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="yearly">Yearly</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="col-25" for="years">Years</label>
+                <input class="col-75" type="text" name="years" id="years"></input>
+            </div>
+            <div class="row">
+                <input class="col-25" type="submit" value="Calculate">
+            </div>
+        </form>
+    </div>
+</body>
